@@ -1,77 +1,201 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Assinatura</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<body style="margin:0;padding:0;">
+  <body>
+    <div class="layout">
+      <aside>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" />
+        </div>
 
-<table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,Helvetica,sans-serif;">
-<tr>
+        <div class="campo">
+          <label for="cargo">Cargo</label>
+          <input type="text" id="cargo" name="cargo" />
+        </div>
 
-<td valign="middle" width="180">
-<img src="https://raw.githubusercontent.com/a-estevam/b4c_assinatura_email/main/img/logo_brain4care.png" width="160" alt="brain4care" style="display:block;">
-</td>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
 
-<td width="1" bgcolor="#D9D9D9"></td>
+        <div class="campo">
+          <label for="celular">Celular</label>
+          <input type="tel" id="celular" name="celular" />
+        </div>
 
-<td valign="middle" width="260" style="padding-left:15px;">
-<table cellpadding="0" cellspacing="0" border="0">
+        <select id="local">
+  <option value="">Selecione um local</option>
+  <option value="São Carlos">São Carlos</option>
+  <option value="São Paulo">São Paulo</option>
+  <option value="Geórgia">Geórgia</option>
+</select>
+      </aside>
 
-<tr>
-<td style="font-size:16px;color:#0085CA;font-weight:bold;"><<NOME>></td>
-</tr>
+      <!--  -->
 
-<tr>
-<td style="font-size:12px;color:#0085CA;font-weight:bold;"><<CARGO>></td>
-</tr>
+      <main>
+        <div class="template">
+          <div class="templateHeader"></div>
+          <div class="templatebody">
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              align="center"
+              style="padding-bottom: 20px"
+            >
+              <tr>
+                <td>
+                  <table
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    style="font-family: Arial, Helvetica, sans-serif"
+                  >
+                    <tr>
+                      <!-- LOGO -->
+                      <td valign="middle" width="180">
+                        <img
+                          src="https://raw.githubusercontent.com/a-estevam/b4c_assinatura_email/main/img/logo_brain4care.png"
+                          width="160"
+                          alt="brain4care"
+                          style="display: block"
+                        />
+                      </td>
 
-<tr><td height="8"></td></tr>
+                      <!-- DIVISOR -->
+                      <td width="1" bgcolor="#D9D9D9"></td>
 
-<tr>
-<td style="font-size:12px;color:#666666;"><<EMAIL>></td>
-</tr>
+                      <!-- DADOS -->
+                      <td
+                        valign="middle"
+                        width="260"
+                        style="padding-left: 15px"
+                      >
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td
+                              style="
+                                font-size: 16px;
+                                color: #0085ca;
+                                font-weight: bold;
+                              "
+                              class="nome"
+                            >
+                              NOME
+                            </td>
+                          </tr>
 
-<tr>
-<td style="font-size:12px;color:#666666;"><<CELULAR>></td>
-</tr>
+                          <tr>
+                            <td
+                              style="
+                                font-size: 12px;
+                                color: #0085ca;
+                                font-weight: bold;
+                              "
+                              class="cargo"
+                            >
+                              CARGO
+                            </td>
+                          </tr>
 
-<tr>
-<td style="font-size:12px;color:#666666;"><<LOCAL>></td>
-</tr>
+                          <tr>
+                            <td height="8"></td>
+                          </tr>
 
-</table>
-</td>
+                          <tr>
+                            <td
+                              style="font-size: 12px; color: #666666"
+                              class="email"
+                            >
+                              EMAIL
+                            </td>
+                          </tr>
 
-<td width="1" bgcolor="#D9D9D9"></td>
+                          <tr>
+                            <td
+                              style="font-size: 12px; color: #666666"
+                              class="celular"
+                            >
+                              CELULAR
+                            </td>
+                          </tr>
 
-<td valign="middle" width="150" align="center">
-<table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td
+                              style="font-size: 12px; color: #666666"
+                              class="local"
+                            >
+                              LOCAL
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
 
-<tr>
-<td align="center">
-<img src="https://raw.githubusercontent.com/a-estevam/b4c_assinatura_email/main/img/brands.gif" width="120" alt="FDA 510(k) Cleared" style="display:block;">
-</td>
-</tr>
+                      <!-- DIVISOR -->
+                      <td width="1" bgcolor="#D9D9D9"></td>
 
-<tr><td height="10"></td></tr>
+                      <!-- SELO / SITE -->
+                      <td valign="middle" width="150" align="center">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td align="center">
+                              <img
+                                src="https://raw.githubusercontent.com/a-estevam/b4c_assinatura_email/main/img/brands.gif"
+                                width="120"
+                                alt="FDA 510(k) Cleared"
+                                style="display: block"
+                              />
+                            </td>
+                          </tr>
 
-<tr>
-<td align="center">
-<table cellpadding="6" cellspacing="0" border="0" bgcolor="#00A9C9">
-<tr>
-<td align="center" style="font-size:12px;color:#FFFFFF;">www.brain4.care</td>
-</tr>
-</table>
-</td>
-</tr>
+                          <tr>
+                            <td height="10"></td>
+                          </tr>
 
-</table>
-</td>
-
-</tr>
-</table>
-
-</body>
+                          <tr>
+                            <td align="center">
+                              <table
+                                cellpadding="6"
+                                cellspacing="0"
+                                border="0"
+                                bgcolor="#00A9C9"
+                              >
+                                <tr>
+                                  <td
+                                    align="center"
+                                    style="font-size: 12px; color: #ffffff"
+                                  >
+                                    www.brain4.care
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
