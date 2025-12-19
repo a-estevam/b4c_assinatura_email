@@ -29,6 +29,24 @@ main{
     height: 600px;
     width: 750px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.templatefake {
+    margin-top: 50px;
+  width: 80%;
+  max-width: 600px;
+  height: 70px;
+  background:
+    linear-gradient(#ddd 0 0) 0 0 / 100% 12px no-repeat,
+    linear-gradient(#ddd 0 0) 0 20px / 100% 12px no-repeat,
+    linear-gradient(#ddd 0 0) 0 40px / 100% 12px no-repeat,
+    linear-gradient(#ddd 0 0) 0 60px / 70% 12px no-repeat;
+
 }
 
 .templateHeader{
@@ -56,3 +74,24 @@ input{
     margin-top: 10px;
     height: 30px;
 }
+
+.site{
+    background: linear-gradient(to right, #0085ca, #00D7A4);
+    padding: 5px 10px ;
+    border-radius: 80px;
+
+}
+
+
+button{
+    color: #ffffff;
+    font-weight: 700;
+    width: 180px;
+    height: 50px;
+    margin-top: 60px;
+    background: linear-gradient(to right, #0085ca, #00D7A4);
+    border: none;
+     padding: 5px 10px ;
+    border-radius: 80px;
+}
+

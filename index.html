@@ -37,11 +37,16 @@
         </div>
 
         <select id="local">
-  <option value="">Selecione um local</option>
-  <option value="São Carlos">São Carlos</option>
-  <option value="São Paulo">São Paulo</option>
-  <option value="Geórgia">Geórgia</option>
-</select>
+          <option value="">Selecione um local</option>
+          <option value="São Carlos">São Carlos</option>
+          <option value="São Paulo">São Paulo</option>
+          <option value="Geórgia">Geórgia</option>
+        </select>
+        <br>
+
+        <button id="copiarAssinatura">Copiar assinatura</button>
+
+        <br />
       </aside>
 
       <!--  -->
@@ -49,13 +54,15 @@
       <main>
         <div class="template">
           <div class="templateHeader"></div>
-          <div class="templatebody">
+          <div class="templatefake"></div>
+          <div class="templatebody" id="area-copiavel">
             <table
               cellpadding="0"
               cellspacing="0"
               border="0"
               align="center"
               style="padding-bottom: 20px"
+              id="assinatura"
             >
               <tr>
                 <td>
@@ -168,16 +175,12 @@
 
                           <tr>
                             <td align="center">
-                              <table
-                                cellpadding="6"
-                                cellspacing="0"
-                                border="0"
-                                bgcolor="#00A9C9"
-                              >
+                              <table cellpadding="6" cellspacing="0" border="0">
                                 <tr>
                                   <td
                                     align="center"
                                     style="font-size: 12px; color: #ffffff"
+                                    class="site"
                                   >
                                     www.brain4.care
                                   </td>

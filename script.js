@@ -65,3 +65,29 @@ inputLocal.addEventListener("change", () => {
     
   }
 })
+
+
+const botaoCopiar = document.querySelector("#copiarAssinatura")
+const assinatura = document.querySelector("#assinatura")
+
+botaoCopiar.addEventListener("click", () => {
+  const range = document.createRange()
+  range.selectNodeContents(assinatura)
+
+  const selection = window.getSelection()
+  selection.removeAllRanges()
+  selection.addRange(range)
+
+  const sucesso = document.execCommand("copy")
+  selection.removeAllRanges()
+
+  if (sucesso) {
+    alert("sua assinatura foi copiada, cole no gmail")
+    setTimeout(() => {
+      botaoCopiar.textContent = "Copiar assinatura"
+    }, 2000)
+  } else {
+    alert("Não foi possível copiar. Tente selecionar manualmente.")
+  }
+})
+
