@@ -49,8 +49,8 @@ inputFoto.addEventListener("change", (event) => {
 // Atualiza crachá
 function atualizaCracha(){
   btnAtualizar.addEventListener("click", () =>{
-    colaborador.textContent = nameUser.value;
-    cargo.textContent = cargoUser.value;
+    colaborador.textContent = nameUser.value.toLocaleLowerCase();
+    cargo.textContent = cargoUser.value.toLocaleLowerCase();
   });
 }
 atualizaCracha();
